@@ -4,11 +4,23 @@ Small recruitment test around triangle image classification.
 
 The goal is to build a complete ML pipeline to predict whether an image contains a right triangle (`1`) or a non-right triangle (`0`), then compare several approaches rigorously.
 
+## Important Rule
+
+The candidate must not explicitly state, implement, encode, approximate, or use the Pythagorean theorem in any way.
+
+Forbidden shortcuts include, but are not limited to:
+
+- checking whether `a^2 + b^2 = c^2`;
+- computing side lengths and applying a hand-coded right-triangle rule;
+- detecting right angles with an explicit geometric formula;
+- creating labels, features, metrics, filters, or post-processing rules based on the Pythagorean theorem.
+
+The objective is to evaluate machine learning, representation learning, robustness, and model analysis, not to solve the task with a deterministic geometry rule.
+
 ## Files
 
-- `solveme.ipynb`: main test notebook.
+- `solveME.ipynb`: main test notebook.
 - `gen-images.py`: image dataset generation script.
-- `Experience-n°1/`: draft / side experiment.
 
 ## Dataset Generation
 
@@ -41,7 +53,7 @@ pip install numpy pandas matplotlib seaborn pillow scikit-learn xgboost hdbscan 
 
 ## Expected Work
 
-The candidate must complete and execute `solveme.ipynb`.
+The candidate must complete and execute `solveME.ipynb`.
 
 All sections are mandatory:
 
